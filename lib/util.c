@@ -139,7 +139,7 @@ xasprintf(const char *format, ...)
 }
 
 void
-strlcpy(char *dst, const char *src, size_t size)
+my_strlcpy(char *dst, const char *src, size_t size)
 {
     if (size > 0) {
         size_t n = strlen(src);
