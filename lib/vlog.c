@@ -468,7 +468,7 @@ fetch_braces(const char *p, const char *def, char *out, size_t out_size)
         out[n_copy] = '\0';
         p += n + 2;
     } else {
-        strlcpy(out, def, out_size);
+        my_strlcpy(out, def, out_size);
     }
     return p;
 }
